@@ -13,7 +13,7 @@ export default function Navbar() {
       <nav className="mx-auto grid max-w-6xl grid-cols-3 items-center px-4 py-3 sm:px-6 lg:flex lg:justify-between">
         {/* Mobile: hamburger on the left */}
         <div className="dropdown lg:hidden">
-          <button tabIndex={0} aria-label="Open menu" className="btn btn-ghost btn-square btn-sm">
+          <button tabIndex={0} aria-label="Open menu" className="btn btn-ghost btn-square btn-sm text-slate-700">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
