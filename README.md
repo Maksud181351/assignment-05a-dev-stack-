@@ -1,16 +1,29 @@
-# React + Vite
+Technologies Used
+React, Vite, Tailwind CSS, DaisyUI, React-Toastify, JavaScript (ES6+), JSON
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Features
+1. Technology cards with icon, badge, category, difficulty and rating, loaded from a JSON file with a loading spinner.
+2. "Your Stack" panel to add, remove one item, or remove all, with toast alerts for every action.
+3. One shared gradient theme and a fully responsive layout with a mobile navbar.
 
-Currently, two official plugins are available:
+React Questions
+1. What is JSX, and why is it used in React?
+JSX is HTML-like code written inside JavaScript. It helps us write UI and logic together.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+2. What is the difference between props and state?
+Props come from the parent and are read-only. State belongs to the component and can change.
 
-## React Compiler
+3. What does useState do, and where did you use it?
+It stores a changing value. I used it in App.jsx for technologies, loading and stack.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+4. What does useEffect do, and why was it needed to load the JSON?
+It runs code after render. I used it to fetch the JSON file once when the page loads.
 
-## Expanding the ESLint configuration
+5. Why does every item in .map() need a unique key?
+React uses the key to identify each item, so it updates only the changed ones.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+6. What is conditional rendering?
+Showing UI based on a condition. In Stack.jsx I show an empty message when the stack has no items.
+
+7. How do you pass data between parent and child?
+Parent sends data to child with props. Child sends data back by calling a function prop like onAdd(tech).
