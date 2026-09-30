@@ -8,36 +8,36 @@ React, Vite, Tailwind CSS, DaisyUI, React-Toastify, JavaScript (ES6+), JSON
 
 ## Features
 
-1. Technology cards with icon, badge, category, difficulty and rating, loaded from a JSON file with a loading spinner.
-2. "Your Stack" panel to add, remove one item, or remove all, with toast alerts for every action.
-3. One shared gradient theme and a fully responsive layout with a mobile navbar.
+1. Cards with technology icons/badges with categories/difficulty/rating values pulled in via a JSON file with a loading spinner.
+2. “Your Stack” panel for adding/removing one item, and clearing all with toasts showing after each action.
+3. Single gradient style throughout and full responsiveness with a mobile navigation bar.
 
 ## React Questions
 
 **1. What is JSX, and why is it used in React?**
 
-JSX is HTML-like code written inside JavaScript. It helps us write UI and logic together.
+JSX is an HTML-like syntax that is written using JavaScript. It makes it easier for us to develop both UI and logic.
 
 **2. What is the difference between props and state?**
 
-Props come from the parent and are read-only. State belongs to the component and can change.
+Props are from the parent and are read-only whereas state is owned by the component and can be mutable.
 
 **3. What does useState do, and where did you use it?**
 
-It stores a changing value. I used it in App.jsx for technologies, loading and stack.
+This contains a variable value. I applied this in App.jsx file on technologies, loading and stack.
 
 **4. What does useEffect do, and why was it needed to load the JSON?**
 
-It runs code after render. I used it to fetch the JSON file once when the page loads.
+It runs code after the render is complete. I used it to fetch the JSON file once on page load.
 
 **5. Why does every item in .map() need a unique key?**
 
-React uses the key to identify each item, so it updates only the changed ones.
+React uses the key to recognize individual items, and hence, only the items that have been modified are updated.
 
 **6. What is conditional rendering?**
 
-Showing UI based on a condition. In YourStack.jsx I show an empty message when the stack has no items.
+Conditionally rendering UI. In YourStack.jsx file, I render an empty message if there are no items in the stack.
 
 **7. How do you pass data between parent and child?**
 
-Parent sends data to child with props. Child sends data back by calling a function prop like onAdd(tech).
+Parent passes down data using props. The child passes back data by calling functions passed down as props.
